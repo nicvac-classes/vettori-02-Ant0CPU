@@ -32,13 +32,13 @@ int main() {
 
     cout<<"Voti: ";
     for (i=0; i<N; i++) {
-        cout<<" "<<voto[i]<<"; ";
+        cout<<" +"<<voto[i]<<"; ";
     }
     cout<<endl;
 
     cout<<"Numero di assenze: "<<endl;
     for (i=0; i<N; i++) {
-        cout<<" "<<ass[i]<<"; ";
+        cout<<""<<ass[i]<<"; ";
     }
     cout<<endl;
 
@@ -57,14 +57,8 @@ int main() {
     cin>>v;
 
     i=0;
-    if (v==nome[i]) {
-
-    }
-    else
-    {
-        while (v!=nome[i]) {
-            i=i+1;
-        }
+    while (v!=nome[i]) {
+        i=i+1;
     }
 
     cout<<"Voto: "<<voto[i]<<";"<<endl;
